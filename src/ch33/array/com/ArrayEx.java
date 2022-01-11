@@ -1,4 +1,4 @@
-package ch33.array.com;
+package ch33.array.com; 
 
 public class ArrayEx {
 	public static void main(String[] args) { 
