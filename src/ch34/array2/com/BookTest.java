@@ -7,7 +7,7 @@ public class BookTest {
 		Book[] library = new Book[5];
 		 
 		/* 
-		 * for(int i=0; i<library.length; i++) { System.out.println(library[i]); }
+		 * for(int i=0; i<library.length; i++) { System.out.println(library[i]); } 
 		 */
 		
 		library[0] = new Book("태백산맥1", "조정래");

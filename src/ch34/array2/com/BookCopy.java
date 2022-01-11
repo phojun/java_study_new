@@ -14,7 +14,7 @@ public class BookCopy {
 		library[4] = new Book("태백산맥5", "조정래");
 		
 		//System.arraycopy(src, srcPos, dest, destPos, length) 자바에서 제공되는 배열 복사 메서드(주소만 복사)
-		System.arraycopy(library, 0, copyLibrary, 0, 5); 
+		System.arraycopy(library, 0, copyLibrary, 0, 5);  
 		
 		//library 원본배열만 수정
 		library[0].setTitle("나목");
