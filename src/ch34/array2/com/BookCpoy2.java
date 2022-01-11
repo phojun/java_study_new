@@ -21,7 +21,7 @@ public class BookCpoy2 {
 		copyLibrary[4] = new Book();
 
 		//처음에는 원본 그대로를 복사해 본다
-		for (int i = 0; i < library.length; i++) {
+		for (int i = 0; i < library.length; i++) { 
 			copyLibrary[i].setTitle(library[i].getTitle());
 			copyLibrary[i].setAuthor(library[i].getAuthor());
 		}

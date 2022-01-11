@@ -2,7 +2,7 @@ package ch33.array.com;
 
 public class ArrayEx {
 	public static void main(String[] args) {
-		//배열 생성
+		//배열 생성 
 		int[] arr=new int[10];
 		int total = 0;
 		
