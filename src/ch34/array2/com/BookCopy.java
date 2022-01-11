@@ -19,7 +19,7 @@ public class BookCopy {
 		//library 원본배열만 수정
 		library[0].setTitle("나목");
 		library[0].setAuthor("박완서"); 
-		 
+		  
 		//copyLibrary cpoy배열만 수정
 		copyLibrary[1].setTitle("별헤는밤");
 		copyLibrary[1].setAuthor("윤동주");

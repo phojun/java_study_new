@@ -3,7 +3,7 @@ package ch34.array2.com;
 public class BookTest {
 
 	public static void main(String[] args) { 
-		
+		 
 		Book[] library = new Book[5];
 		 
 		/* 
