@@ -16,7 +16,7 @@ public class BookCpoy2 {
 		//깊은복사는 system.arraycopy를 사용하지 않고 배열 인덱스 마다 따로 객체를 생성한다
 		copyLibrary[0] = new Book();
 		copyLibrary[1] = new Book();
-		copyLibrary[2] = new Book(); 
+		copyLibrary[2] = new Book();  
 		copyLibrary[3] = new Book();
 		copyLibrary[4] = new Book(); 
 
