@@ -18,7 +18,7 @@ public class BookCpoy2 {
 		copyLibrary[1] = new Book();
 		copyLibrary[2] = new Book();
 		copyLibrary[3] = new Book();
-		copyLibrary[4] = new Book();
+		copyLibrary[4] = new Book(); 
 
 		//처음에는 원본 그대로를 복사해 본다
 		for (int i = 0; i < library.length; i++) { 

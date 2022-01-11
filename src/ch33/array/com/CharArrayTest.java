@@ -2,7 +2,7 @@ package ch33.array.com;
 
 public class CharArrayTest {
 	public static void main(String[] args) {
-		
+		 
 		char[] alphabets = new char[26];
 		char ch='A';
 		

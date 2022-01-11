@@ -15,7 +15,7 @@ public class ArrayEx {
 			System.out.println(num);
 			  total+=num; 
 		}
-		 
+		  
 		System.out.println(total);
 	}
 	
