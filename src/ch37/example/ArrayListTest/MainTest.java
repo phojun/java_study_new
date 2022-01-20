@@ -1,5 +1,6 @@
 package ch37.example.ArrayListTest;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -13,8 +14,17 @@ Student와 Subject 클래스를 만들고 ArrayList를 활용하여 두 학생�
 *
 */
 public class MainTest {
+	static ArrayList<Student> stList = new ArrayList<Student>();
+	public static void showAllList() {
+		for(Student a : stList) {
+			a.showInfo();
+		}
+	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		
+		
 		int input;
 		int score;
 		String subject;
@@ -85,6 +95,7 @@ public class MainTest {
 						}
 						
 						if(plusSubject==2) {
+							stList.add(s);
 							break;
 						}else if (plusSubject==1) {
 							
@@ -92,14 +103,18 @@ public class MainTest {
 							count++;
 							if (count >= 10) {
 								System.out.println("10회 오류로 자동 종료됩니다.");
+								stList.add(s);
 								break;
 							} else {
 								System.out.println("1과 2중 하나만 입력해주세요 " + count + "회 오류(10회 오류시 종료됩니다.)");
 							}
 						}
-
 					}
+					System.out.println("현재 추가된 학생 정보");
 					s.showInfo();
+					System.out.println("학생 전체 정보");
+					showAllList();
+					
 				} else {
 					System.out.println("학생의 이름을 입력해주세요");
 					break;
