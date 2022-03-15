@@ -1,0 +1,4 @@
+3월 15, 2022 7:38:54 오후 ch75.MyLogger warning
+WARNING: 이름은 필수 입력사항입니다.
+3월 15, 2022 7:38:54 오후 ch75.MyLogger warning
+WARNING: 이름이 너무 깁니다.
