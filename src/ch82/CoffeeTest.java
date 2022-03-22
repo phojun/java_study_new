@@ -11,6 +11,10 @@ public class CoffeeTest {
 		kenyaLatte.brewing();
 		System.out.println();
 		
+		Latte etiopiaLatte = new Latte(new EtiopiaAmericano());
+		etiopiaLatte.brewing();
+		System.out.println();
+		
 		Mocha kenyaMocha = new Mocha(new Latte(new KenyaAmericano()));
 		kenyaMocha.brewing();
 		System.out.println();
