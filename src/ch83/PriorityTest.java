@@ -2,19 +2,23 @@ package ch83;
 
 class PriorityThread extends Thread{
 	
-	public void run(){
+	public PriorityThread(String name) {
+		super(name);
+	}
 	
+	//우선 순위가 높은 Thread가 CPU의 배분을 받을 (확률)이 높다
+	public void run(){
+		
+		System.out.println(Thread.currentThread().getName()+" start");
 		int sum = 0;
-		
-		Thread t = Thread.currentThread();
-		System.out.println( t + "start");
-		
-		for(int i =0; i<=1000000; i++){
+		for(int i =0; i<=10; i++){
 			
-			sum += i;
+			sum+=i;
 		}
 		
-		System.out.println( t.getPriority() + "end");
+		System.out.println("sum = "+sum+Thread.currentThread().getName()+" end");
+		
+	
 	}
 }
 
@@ -23,14 +27,17 @@ public class PriorityTest {
 
 	public static void main(String[] args) {
 
-		int i;
-		for(i=Thread.MIN_PRIORITY; i<= Thread.MAX_PRIORITY; i++){
-			
-			PriorityThread pt = new PriorityThread();
-			pt.setPriority(i);
-			pt.start();
+		PriorityThread pt1 = new PriorityThread("우선순위가 낮은 스레드");
+		PriorityThread pt2 = new PriorityThread("우선순위가 높은 스레드");
+		PriorityThread pt3 = new PriorityThread("우선순위가 중간인 스레드");
 		
-		}
+		pt1.setPriority(Thread.MIN_PRIORITY);
+		pt2.setPriority(Thread.MAX_PRIORITY);
+		pt3.setPriority(Thread.NORM_PRIORITY);
+		
+		pt1.start();
+		pt2.start();
+		pt3.start();
 	}
 
 }
