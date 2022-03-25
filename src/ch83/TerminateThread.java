@@ -51,7 +51,7 @@ public class TerminateThread extends Thread{
 				threadB.setFlag(true);
 			}else if( in == 'C'){
 				threadC.setFlag(true);
-			}else if( in == 'M'){
+			}else if( in == 'M'){ // thread 종료
 				threadA.setFlag(true);
 				threadB.setFlag(true);
 				threadC.setFlag(true);
