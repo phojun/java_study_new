@@ -11,7 +11,7 @@ class Bank1 {
 		this.money = money;
 	}
 
-	public void saveMoney(int save) {// 현재 이 메서드가 속해있는 객체에 lock을 건다.
+	public void saveMoney(int save) {
 
 		int m = getMoney();
 		try {
@@ -23,7 +23,7 @@ class Bank1 {
 
 	}
 
-	public void minusMoney(int minus) {// 현재 이 메서드가 속해있는 객체에 lock을 건다.
+	public void minusMoney(int minus) {
 		int m = getMoney();
 		try {
 			Thread.sleep(300);
